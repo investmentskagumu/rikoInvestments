@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KagumuInvestments | Digital Powerhouse</title>
+
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">Riko<span>Investments</span></div>
+
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="#services">Services</a>
+    <a href="software.html">Software</a>
+    <a href="data.html">Data</a>
+    <a href="digital.html">Digital</a>
+    <a href="assets.html">Assets</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="auth-buttons">
+    <a href="login.html" class="secondary-btn">Login</a>
+    
+  </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="assets/videos/12564026_1920_1080_60fps.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+  <div class="gold-overlay"></div>
+
+  <div class="hero-content">
+    <h1>
+      Engineering Africa’s <span>Digital Power</span><br>
+      & Financial Intelligence
+    </h1>
+
+    <p>
+      A unified platform for software, data intelligence, digital services,
+      and asset recovery — all in one system.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="dashboard.html" class="primary-btn">Enter Platform</a>
+      <button class="secondary-btn" onclick="scrollToSection('services')">Explore Services</button>
+    </div>
+  </div>
+</section>
+
+<!-- 🔥 VISION (RESTORED + UPGRADED) -->
+<section class="vision">
+  <div class="vision-container">
+
+    <!-- TEXT -->
+    <div class="vision-text">
+      <h2>Our Vision</h2>
+      <p>
+        To build Africa’s leading digital infrastructure company powering
+        financial systems, intelligent automation, and scalable technologies
+        that redefine how individuals, businesses, and institutions operate.
+      </p>
+
+      <h2 class="mission-title">Our Mission</h2>
+      <p>
+        To deliver reliable, secure, and intelligent solutions through a unified
+        platform that simplifies complex processes, unlocks opportunities, and
+        enables growth in a data-driven digital economy.
+      </p>
+
+      <!-- STRATEGIC POINTS -->
+      <div class="vision-points">
+        <div>✔ Platform-Based Solutions</div>
+        <div>✔ Intelligent Automation</div>
+        <div>✔ Financial & Data Systems</div>
+        <div>✔ Scalable Infrastructure</div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="vision-image">
+      <img src="assets/images/pexels-joy-kahashi-1725918396-27965508.jpg" alt="vision">
+    </div>
+
+  </div>
+</section>
+
+<!-- PLATFORM INTRO -->
+<section class="features">
+  <h2>One Platform. Multiple Solutions.</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Client Dashboard</h3>
+      <p>Track requests and manage services in real-time.</p>
+    </div>
+
+    <div class="card">
+      <h3>Automation</h3>
+      <p>Submit and process requests instantly.</p>
+    </div>
+
+    <div class="card">
+      <h3>Security</h3>
+      <p>Encrypted and protected systems.</p>
+    </div>
+
+    <div class="card">
+      <h3>Scalable</h3>
+      <p>Built for growth and expansion.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <h2>Core Divisions</h2>
+
+  <div class="grid">
+
+    <a href="software.html" class="card service-link">
+      <img src="assets/images/pexels-jorge-jesus-137537-614117.jpg" class="icon">
+      <h3>Software Engineering</h3>
+      <ul>
+        <li>Web & Mobile Apps</li>
+        <li>APIs</li>
+        <li>Automation</li>
+      </ul>
+      <p class="explore">Explore →</p>
+    </a>
+
+    <a href="data.html" class="card service-link">
+      <img src="assets/images/finance2.jpg" class="icon">
+      <h3>Data Intelligence</h3>
+      <ul>
+        <li>Analytics</li>
+        <li>Models</li>
+        <li>Dashboards</li>
+      </ul>
+      <p class="explore">Explore →</p>
+    </a>
+
+    <a href="digital.html" class="card service-link">
+      <img src="assets/images/pexels-washira-m1-11998535.jpg" class="icon">
+      <h3>Digital Services</h3>
+      <ul>
+        <li>KRA</li>
+        <li>Passport</li>
+        <li>eCitizen</li>
+      </ul>
+      <p class="explore">Explore →</p>
+    </a>
+
+    <a href="assets.html" class="card service-link">
+      <img src="assets/images/pexels-shkrabaanthony-5583965.jpg" class="icon">
+      <h3>Asset Recovery</h3>
+      <ul>
+        <li>Tracing</li>
+        <li>Claims</li>
+        <li>Support</li>
+      </ul>
+      <p class="explore">Explore →</p>
+    </a>
+
+  </div>
+</section>
+
+<!-- DASHBOARD PREVIEW -->
+<section class="dashboard-preview">
+  <h2>Client Control Center</h2>
+  <p>Manage everything from one powerful dashboard.</p>
+
+  <img src="assets/images/dstech1.jpg">
+
+  <a href="dashboard.html" class="primary-btn" style="margin-top:20px;">
+    Open Dashboard
+  </a>
+</section>
+
+<!-- CTA -->
+<section class="final-cta">
+  <h2>Start Using the Platform Today</h2>
+  <p>Access powerful tools, services, and insights in one place.</p>
+
+  <a href="dashboard.html" class="primary-btn">
+    Get Started
+  </a>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Contact</h2>
+
+  <form onsubmit="handleSubmit(event)">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    © 2026 KagumuInvestments<br>
+    kagumuinvestments@gmail.com<br>
+    +254 705 841 045
+  </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html> 

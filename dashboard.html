@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | RikoInvestments</title>
+
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Riko<span>Investments</span></div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </nav>
+</header>
+
+<section class="dashboard">
+
+  <h1>Client Dashboard</h1>
+
+  <!-- STATS -->
+  <div class="dashboard-stats">
+
+    <div class="stat-card">
+      <h3 id="totalRequests">0</h3>
+      <p>Requests</p>
+    </div>
+
+    <div class="stat-card">
+      <h3 id="pending">0</h3>
+      <p>Pending</p>
+    </div>
+
+    <div class="stat-card">
+      <h3 id="completed">0</h3>
+      <p>Completed</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Active</h3>
+      <p>Status</p>
+    </div>
+
+  </div>
+
+  <!-- NEW REQUEST -->
+  <div class="dashboard-section">
+    <h2>Submit Request</h2>
+
+    <form onsubmit="createRequest(event)">
+      <select id="serviceType" required>
+        <option value="">Select Service</option>
+        <option>Software Development</option>
+        <option>Data Analysis</option>
+        <option>KRA Filing</option>
+        <option>Passport Application</option>
+        <option>Asset Recovery</option>
+      </select>
+
+      <textarea id="description" placeholder="Describe your request"></textarea>
+
+      <button class="primary-btn">Submit</button>
+    </form>
+  </div>
+
+  <!-- REQUESTS -->
+  <div class="dashboard-section">
+    <h2>My Requests</h2>
+    <div id="requests" class="requests-grid"></div>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
